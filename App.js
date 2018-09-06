@@ -8,19 +8,14 @@ import React, { Component } from 'react';
 import {Platform,StyleSheet,Text,View,Image} from 'react-native';
 import Judul from './Components/Judul';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Judul/>
+        <Judul title="BIODATA"/>
+        <Judul title="LOGIN"/>
         <Text style={styles.welcome}>
           Armico Nur Zul Haq
         </Text>
@@ -30,6 +25,10 @@ export default class App extends Component<Props> {
         <Image
          style={{ width: 250, height: 200 }}
          source={require('./1.jpg')}
+        />
+        <Image
+         style={{ width: 300, height: 200 }}
+         source={require('./2.png')}
         />
       </View>
     );

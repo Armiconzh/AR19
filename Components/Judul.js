@@ -5,7 +5,7 @@ class Judul extends React.Component{
 	render(){
 		return(
 			
-			<Text style={cantik.bio}>Biodata</Text>
+			<Text style={cantik.bio}>{this.props.title}</Text>
 		)
 	}
 }
